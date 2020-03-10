@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p onclick="changeStyle()">
+      This is a paragraph
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      function changeStyle() {
+        //p 태그 안 문자 스타일 변경하기
+        //색상, 크기, 이탤릭, 글꼴 변경
+        let pa = $("p");
+        console.log(pa);
+        // pa.css("color", "red");
+        // pa.css("font-size", "20px");
+        // pa.css("font-style", "italic");
+        // pa.css("font-family", "Century Schoolbook");
+
+        pa.css({
+          color: "red",
+          "font-size": "30px",
+          "font-style": "italic",
+          "font-family": "Century Schoolbook"
+        });
+      }
+    </script>
+  </body>
+</html>

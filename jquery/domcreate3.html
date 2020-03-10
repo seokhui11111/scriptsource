@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    //문서가 로드되면 body 안에 ul과 li태그를 생성한 후 문자넣기
+    window.onload = function() {
+      //익명함수
+      //태그 생성하기
+      let output = "<ul>";
+      output += "<li>JAVASCRIPT</li>";
+      output += "<li>CSS</li>";
+      output += "<li>JQUERY</li>";
+      output += "</ul>";
+      $("body").html(output); //innerHTML 대체
+    };
+  </script>
+</html>

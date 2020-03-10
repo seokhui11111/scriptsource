@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" disabled />
+    <input type="text" name="" id="" />
+    <select name="" id="">
+      <option value="Apple">Apple</option>
+      <option value="Bag">Bag</option>
+      <option value="Cat">Cat</option>
+      <option value="Dog">Dog</option>
+    </select>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $("input:disabled").val("Hello JQuery");
+      setTimeout(function() {
+        let value = $("select > option:selected").val();
+        alert(value);
+      }, 3000);
+    </script>
+  </body>
+</html>

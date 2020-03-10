@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="">이름</label>
+        <input type="text" name="username" />
+      </div>
+      <div>
+        <label for="">아이디</label>
+        <input type="text" name="userid" />
+      </div>
+      <div>
+        <button onclick="send()" type="button">보내기</button>
+      </div>
+    </form>
+    <script>
+      function send() {
+        // let input = document.querySelector("input");
+        // console.log(input.value); //<input type="text" name="username">
+        let input = document.querySelectorAll("input");
+        if (input[0].value === "") {
+          alert("이름이 비어 있습니다.");
+          input[0].focus();
+          return;
+        }
+        if (input[1].value === "") {
+          alert("아이디가 비어 있습니다.");
+          input[1].focus();
+          return;
+        }
+        //form 안의 내용이 다 작성이 되었다면
+        //submit()하기
+        let form = document.querySelector("form");
+        form.submit();
+
+        // input = document.querySelector("[name='username']");
+        // console.log(input.value);
+
+        // input = document.getElementsByName("username");
+        // console.log(input[0].value); //NodeList(or HTMLCollection)
+      }
+    </script>
+  </body>
+</html>

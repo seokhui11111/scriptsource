@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem Ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      officia cumque debitis hic, aliquam quis? Labore ad, dolor culpa qui quas
+      quod aspernatur nam consequuntur commodi, quis unde voluptatum voluptas?
+      <br />
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      officia cumque debitis hic, aliquam quis? Labore ad, dolor culpa qui quas
+      quod aspernatur nam consequuntur commodi, quis unde voluptatum voluptas?
+    </p>
+    <script>
+      //p 태그안에 들어있는 값 가져오기
+      let p1 = document.querySelector("p").innerText;
+
+      console.log("g 플래그 사용");
+      console.log(p1.match(/ipsum/g));
+      console.log();
+
+      console.log("gi 플래그 사용");
+      console.log(p1.match(/ipsum/gi));
+      console.log();
+    </script>
+  </body>
+</html>
